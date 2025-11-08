@@ -1,0 +1,53 @@
+.post_admin_view {
+  table {
+    width: 100%;
+    text-align: center;
+    thead {
+      color: #fff;
+
+      color: #fff;
+      background-image: linear-gradient(
+        to right,
+        var(--m4u-clr-primary),
+        var(--m4u-clr-secondary)
+      );
+      border-image-slice: 1;
+      border-image-source: linear-gradient(
+        to right,
+        var(--m4u-clr-primary),
+        var(--m4u-clr-secondary)
+      );
+      th {
+        padding: 16px;
+        text-align: start;
+      }
+    }
+
+    tbody {
+      td {
+        font-size: 14px;
+        padding: 16px;
+        border: 1px solid #dadada;
+      }
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-1w65pnn).ant-upload-wrapper .ant-upload {
+  outline: 0;
+  width: 100%;
+  display: inline-block;
+}
+
+.disabled,
+:disabled {
+  background: #eee !important;
+  border: 1px solid #eee !important;
+  color: #fff !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+.ql-editor {
+  min-height: 200px;
+}

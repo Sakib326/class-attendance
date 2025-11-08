@@ -1,0 +1,22 @@
+@import "./base/reset.scss";
+@import "./vendors/tailwind.scss";
+@import "./vendors/sidebar.scss";
+@import "./vendors/ant.scss";
+@import "./misc.scss";
+@import "./components/form.scss";
+
+.ant-tree-treenode {
+  &:hover .node_delete {
+    display: block;
+  }
+}
+.node_delete {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  display: none;
+  &:hover {
+    color: red;
+  }
+}
+ 

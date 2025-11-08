@@ -1,0 +1,269 @@
+// table
+.ant-table-cell {
+  &::before {
+    display: none !important;
+  }
+}
+// table media
+.table_media {
+  th.ant-table-cell {
+    padding: 14px 8px !important;
+  }
+  .ant-table-cell {
+    padding: 8px !important;
+  }
+}
+
+.ant-popover {
+  z-index: 1000000 !important;
+}
+
+.table_media_grid {
+  .ant-table-thead {
+    display: none;
+  }
+  .ant-table-tbody {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .ant-table-row {
+    position: relative;
+    &:hover {
+      .ant-table-selection-column {
+        background-color: transparent !important;
+      }
+    }
+  }
+  .ant-table-selection-column {
+    position: absolute !important;
+    z-index: 100;
+    top: -7px;
+  }
+  .ant-table-tbody > tr.ant-table-row-selected > td {
+    background: transparent;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .ant-table-row-selected:hover > td {
+    background: transparent !important;
+  }
+  .ant-table-wrapper .ant-table-tbody > tr > td {
+    border-bottom: none !important;
+  }
+  .table_media .ant-table-cell {
+    padding: 0 !important;
+  }
+  .ant-table-cell {
+    display: flex !important;
+  }
+}
+
+// tree
+:where(.css-dev-only-do-not-override-1d8toyw).ant-tree
+  .ant-tree-node-content-wrapper,
+:where(.css-dev-only-do-not-override-1d8toyw).ant-tree
+  .ant-tree-checkbox
+  + span {
+  padding: 0;
+}
+
+// select
+// media
+.media_search_select .ant-select-selector {
+  height: auto !important;
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 35px;
+}
+
+.ant-checkbox-wrapper + .ant-checkbox-wrapper {
+  margin-inline-start: 0px !important;
+}
+
+.add_post_tag .ant-select-arrow {
+  display: none;
+}
+
+.add_post_categories .ant-checkbox-wrapper {
+  max-width: max-content;
+}
+
+// scrollbar
+.add_post_categories ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.add_post_categories ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.add_post_categories ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+/* Handle on hover */
+.add_post_categories ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.add_post {
+  border-radius: 0px !important;
+}
+
+.add_post .ant-collapse-item {
+  border-radius: 0px !important;
+}
+
+.add_new_page {
+  border-radius: 0px !important;
+}
+.add_new_page .ant-collapse-item {
+  border-radius: 0px !important;
+}
+
+.ps-submenu-expand-icon {
+  padding-right: 4px !important;
+  span {
+    width: 7px !important;
+    height: 7px !important;
+    border-right: 1px solid currentcolor !important;
+    border-bottom: 1px solid currentcolor !important;
+  }
+}
+
+// Modal
+// .ant-modal-header {
+//   margin-bottom: 0 !important;
+// }
+// .ant-modal-content {
+//   padding: 0 !important;
+//   border-radius: 4px !important;
+// }
+
+.contact_table .ant-table-pagination {
+  padding-right: 16px;
+}
+
+:where(.css-dev-only-do-not-override-112f81b).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
+  display: none;
+}
+
+.contact_table .ant-table-content {
+  height: calc(100vh - 214px);
+  overflow: auto;
+}
+
+.ant-table-content {
+  &::-webkit-scrollbar {
+    width: 4px;
+    overflow: visible;
+    background: #fefbf0;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background: #cacaca;
+  }
+}
+
+.contact_menu {
+  &::-webkit-scrollbar {
+    width: 4px;
+    overflow: visible;
+    background: #fefbf0;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background: #cacaca;
+  }
+}
+.contact_table .ant-table-thead {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.user_role_rules {
+  &::-webkit-scrollbar {
+    width: 4px;
+    overflow: visible;
+    background: #fefbf0;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background: #cacaca;
+  }
+}
+
+.user_role_table .ant-table-content {
+  height: calc(100vh - 285px);
+  overflow: auto;
+}
+.user_role_table .ant-table-thead {
+  position: sticky;
+  top: 0;
+  z-index: 111;
+}
+.user_role_table .ant-table-pagination {
+  margin: 16px 16px 16px 0 !important;
+}
+
+:where(.css-dev-only-do-not-override-15h9v04).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
+  display: none;
+}
+
+.zodit-add-new-line_after {
+  display: none !important;
+}
+
+// ant confirm
+.ant-popconfirm-buttons {
+  .ant-btn-primary {
+    background-color: #1d4a69;
+    color: #fff I !important;
+  }
+}
+.ant-picker-ok {
+  .ant-btn {
+    background-color: #1d4a69;
+    color: #fff I !important;
+  }
+}
+
+// testimonial
+
+:where(.css-dev-only-do-not-override-6sggws).ant-select-single
+  .ant-select-selector {
+  border-radius: 0;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-upload {
+  max-width: 380px !important;
+  width: 100% !important;
+}

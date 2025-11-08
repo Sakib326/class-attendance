@@ -1,0 +1,36 @@
+.ps-submenu-expand-icon {
+  padding-right: 4px !important;
+  span {
+    width: 7px !important;
+    height: 7px !important;
+    border-right: 1px solid currentcolor !important;
+    border-bottom: 1px solid currentcolor !important;
+  }
+}
+
+.scroll {
+  .ps-sidebar-container {
+    &::-webkit-scrollbar {
+      width: 4px;
+      overflow: visible;
+      background: #fefbf0;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+    &:hover::-webkit-scrollbar-thumb {
+      background: #cacaca;
+    }
+  }
+}
+
+.custom {
+  background-color: #fff !important;
+  .ps-sidebar-container {
+    background-color: #feefe7 !important;
+  }
+  .ps-submenu-content {
+    background-color: #feefe7 !important;
+  }
+}

@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-[#484644];
+  }
+  h1 {
+    @apply lg:text-[58px] md:text-[40px] text-[36px] lg:leading-[70px] md:leading-[50px] leading-[40px] font-bold;
+  }
+  h2 {
+    @apply lg:text-[44px] md:text-[36px] text-[28px] lg:leading-[60px] md:leading-[40px] leading-[34px] font-bold;
+  }
+  h3 {
+    @apply lg:text-[32px] md:text-[26px] text-[22px] lg:leading-[44px] md:leading-[34px] leading-[30px] font-bold;
+  }
+  h4 {
+    @apply lg:text-[24px] md:text-[22px] text-[18px] lg:leading-[32px] md:leading-[30px] leading-[26px] font-bold;
+  }
+  h5 {
+    @apply lg:text-[20px] md:text-[18px] text-[16px] lg:leading-[28px] md:leading-[24px] leading-[20px] font-bold;
+  }
+  h6 {
+    @apply lg:text-[18px] md:text-[16px] text-[16px] lg:leading-[24px] md:leading-[22px] leading-[20px] font-bold;
+  }
+
+  p {
+    @apply text-[16px] leading-[22px];
+  }
+}
+
+@layer components {
+  // heading classes
+  .heading-one {
+    @apply lg:text-[58px] md:text-[40px] text-[36px] lg:leading-[70px] md:leading-[50px] leading-[40px] font-bold;
+  }
+  .heading-two {
+    @apply lg:text-[44px] md:text-[36px] text-[28px] lg:leading-[60px] md:leading-[40px] leading-[34px] font-bold;
+  }
+  .heading-three {
+    @apply lg:text-[32px] md:text-[26px] text-[22px] lg:leading-[44px] md:leading-[34px] leading-[30px] font-bold;
+  }
+  .heading-four {
+    @apply lg:text-[24px] md:text-[22px] text-[18px] lg:leading-[32px] md:leading-[30px] leading-[26px] font-bold;
+  }
+  .heading-five {
+    @apply lg:text-[20px] md:text-[18px] text-[16px] lg:leading-[28px] md:leading-[24px] leading-[20px] font-bold;
+  }
+  .heading-six {
+    @apply lg:text-[18px] md:text-[16px] text-[16px] lg:leading-[24px] md:leading-[22px] leading-[20px] font-bold;
+  }
+
+  // buttons
+  .btn {
+    @apply cursor-pointer inline-flex gap-1.5 font-medium text-sm items-center justify-center  py-2 px-4 rounded-[4px] whitespace-nowrap;
+  }
+  .btn-primary {
+    @apply border border-primary bg-primary text-white hover:text-primary hover:bg-secondary hover:border-secondary  transition-all;
+  }
+  .btn-secondary {
+    @apply border border-secondary bg-secondary text-white font-semibold hover:bg-primary hover:border-primary hover:text-white transition-all;
+  }
+  .btn-white {
+    @apply border border-[#eaeaea] hover:border-primary bg-white  text-primary transition-all;
+  }
+  .btn-grey {
+    @apply border border-[#ebebed] bg-[#fdfdfd] text-black hover:bg-grey font-semibold transition-all;
+  }
+
+  .btn-white-outline {
+    @apply text-primary bg-gradient-to-b from-[#ffffff] to-[#F5F7F9] border border-[#E5E7EB] transition-all;
+  }
+}
+
+.error {
+  @apply text-danger text-xs;
+}
+
+.input_label {
+  @apply mb-1 text-[13px] font-medium block;
+}
+
+.input_field {
+  @apply border border-[#e5e7eb] pl-3 pr-9 py-2 w-full rounded;
+}
