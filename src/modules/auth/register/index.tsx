@@ -212,12 +212,8 @@ const Register = () => {
       <div className="auth_h_screen max-w-7xl mx-auto">
         <div className="flex flex-col h-full items-center justify-center p-3 sm:p-5 md:p-12 lg:p-12">
           <div className="mb-6 sm:mb-10 text-center w-full">
-            <div className="mb-4 sm:mb-8 flex justify-center">
-              <img
-                src="/images/misc/attendify.png"
-                alt="Attendify Logo"
-                className="max-w-[200px] sm:max-w-none"
-              />
+            <div className="mb-4 sm:mb-8 flex justify-center h-12">
+              <img src="/images/misc/attendify.png" alt="Attendify Logo" />
             </div>
             <h4 className="text-lg sm:text-xl mb-1 sm:mb-2">
               Welcome to Attendify Portal

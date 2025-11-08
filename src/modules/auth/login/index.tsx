@@ -136,13 +136,17 @@ const Login = () => {
     <div className="p-8 min-h-screen overflow-auto grid place-content-center">
       <div className="auth_h_screen grid lg:grid-cols-[1fr_550px] xl:grid-cols-[1fr_650px] lg:gap-6 xl:gap-12">
         <div className="hidden lg:flex lg:items-center xl:items-end justify-center bg-[#F8F7FA] rounded-2xl pt-10">
-          <img src="/images/misc/welcome-to-immimentor.jpg" alt="login" />
+          <img src="/images/misc/welcome-to-attendify.webp" alt="login" />
         </div>
 
         <div className="flex flex-col h-full items-center justify-center p-5 md:p-12 md:px-[70px] lg:p-12">
           <div className="mb-10 text-center">
             <div className="mb-8 flex justify-center">
-              <img src="/images/misc/attendify.png" alt="Attendify Logo" />
+              <img
+                src="/images/misc/attendify.png"
+                alt="Attendify Logo"
+                className="h-12"
+              />
             </div>
             <h4 className="mb-2">Welcome to Attendify</h4>
             <p>Sign in to your account</p>

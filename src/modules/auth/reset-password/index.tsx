@@ -107,7 +107,7 @@ const ResetPassword = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-[#ffe1d6] to-[#fff8f5] opacity-70"></div>
 
           <img
-            src="/images/misc/welcome-to-immimentor.jpg"
+            src="/images/misc/welcome-to-attendify.webp"
             alt="login"
             className="relative z-10 max-w-full"
           />
@@ -119,7 +119,7 @@ const ResetPassword = () => {
               <img
                 src="/images/misc/attendify.png"
                 alt="Attendify Logo"
-                className="h-10"
+                className="h-12"
               />
             </div>
             <h4 className="mb-2 text-2xl font-bold text-gray-800">

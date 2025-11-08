@@ -47,7 +47,7 @@ const ForgotPassword = () => {
     <div className="p-8 min-h-screen overflow-auto grid place-content-center">
       <div className="auth_h_screen grid lg:grid-cols-[1fr_550px] xl:grid-cols-[1fr_650px] lg:gap-6 xl:gap-12">
         <div className="hidden lg:flex lg:items-center xl:items-end justify-center bg-[#F8F7FA] rounded-2xl pt-10">
-          <img src="/images/misc/welcome-to-immimentor.jpg" alt="login" />
+          <img src="/images/misc/welcome-to-attendify.webp" alt="login" />
         </div>
 
         <div className="flex flex-col h-full items-center justify-center p-5 md:p-12 md:px-[70px] lg:p-12">
