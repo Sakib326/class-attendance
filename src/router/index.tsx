@@ -14,6 +14,13 @@ import UpdateProfile from "@/modules/profile/updateProfile";
 import UpdatePassword from "@/modules/profile/updatePassword";
 import ResetPassword from "@/modules/auth/reset-password";
 import MyCourses from "@/modules/teacher/my-courses/list";
+import TeacherList from "@/modules/dashboard/components/teachers/list";
+import CourseList from "@/modules/dashboard/components/courses/list";
+import TakeAttendance from "@/modules/teacher/take-attendance";
+import ViewAttendance from "@/modules/teacher/view-attendance";
+import Profile from "@/modules/teacher/profile";
+import Departments from "@/modules/dashboard/components/departments/department-list";
+
 // Lazy loaded pages
 const Dashboard = lazy(() => import("@/modules/dashboard"));
 const StudentList = lazy(() => import("@/modules/student/list"));
@@ -40,6 +47,16 @@ const AppRouter = () => {
           <Route element={<ProtectedRoute allowedRoles={["Admin"]} />}>
             <Route path="/admin/dashboard" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route
+              path="/dashboard/departments/list"
+              element={<Departments />}
+            />
+            <Route path="/dashboard/teachers/list" element={<TeacherList />} />
+            <Route path="/dashboard/courses/list" element={<CourseList />} />
+            <Route
+              path="/dashboard/attendance/view"
+              element={<ViewAttendance />}
+            />
 
             {/* Students */}
             <Route path="/students/list" element={<StudentList />} />
@@ -47,7 +64,17 @@ const AppRouter = () => {
             <Route path="/student/edit/:id" element={<Addnewstudent />} />
           </Route>
           <Route element={<ProtectedRoute allowedRoles={["User"]} />}>
+            <Route path="/teacher/dashboard" element={<Dashboard />} />
             <Route path="/teacher/my-courses" element={<MyCourses />} />
+            <Route
+              path="/teacher/take-attendance"
+              element={<TakeAttendance />}
+            />
+            <Route
+              path="/teacher/view-attendance"
+              element={<ViewAttendance />}
+            />
+            <Route path="/teacher/profile" element={<Profile />} />
 
             <Route path="/settings/profile" element={<UpdateProfile />} />
             <Route path="/settings/password" element={<UpdatePassword />} />
