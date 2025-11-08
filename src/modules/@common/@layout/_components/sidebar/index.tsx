@@ -70,6 +70,28 @@ const SidebarComponent = ({ collapsed, toggled, setToggled }: propTypes) => {
             <span className="text-sm font-medium">Add New Student</span>
           </MenuItem>
         </SubMenu>
+
+        <MenuItem
+          className={pathname == "/teacher/my-courses" ? "" : ""}
+          component={<Link to="/teacher/my-courses" />}
+          icon={<MdOutlineDashboard className="text-xl" />}
+        >
+          <span className="text-sm font-medium">My Courses</span>
+        </MenuItem>
+        <MenuItem
+          className={pathname == "/teacher/take-attendance" ? "" : ""}
+          component={<Link to="/teacher/take-attendance" />}
+          icon={<MdOutlineDashboard className="text-xl" />}
+        >
+          <span className="text-sm font-medium">Take Attendance</span>
+        </MenuItem>
+        <MenuItem
+          className={pathname == "/teacher/view-attendance" ? "" : ""}
+          component={<Link to="/teacher/view-attendance" />}
+          icon={<MdOutlineDashboard className="text-xl" />}
+        >
+          <span className="text-sm font-medium">View Attendance</span>
+        </MenuItem>
       </Menu>
     </Sidebar>
   );

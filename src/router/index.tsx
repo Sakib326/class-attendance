@@ -13,6 +13,7 @@ import EmailConfirm from "@/modules/auth/register/components/EmailConfirm";
 import UpdateProfile from "@/modules/profile/updateProfile";
 import UpdatePassword from "@/modules/profile/updatePassword";
 import ResetPassword from "@/modules/auth/reset-password";
+import MyCourses from "@/modules/teacher/my-courses/list";
 // Lazy loaded pages
 const Dashboard = lazy(() => import("@/modules/dashboard"));
 const StudentList = lazy(() => import("@/modules/student/list"));
@@ -45,8 +46,8 @@ const AppRouter = () => {
             <Route path="/student/add" element={<Addnewstudent />} />
             <Route path="/student/edit/:id" element={<Addnewstudent />} />
           </Route>
-          <Route element={<ProtectedRoute allowedRoles={["User", "Admin"]} />}>
-            {/* <Route path="/exam/dashbord" element={<ExamDashboard />} /> */}
+          <Route element={<ProtectedRoute allowedRoles={["User"]} />}>
+            <Route path="/teacher/my-courses" element={<MyCourses />} />
 
             <Route path="/settings/profile" element={<UpdateProfile />} />
             <Route path="/settings/password" element={<UpdatePassword />} />
